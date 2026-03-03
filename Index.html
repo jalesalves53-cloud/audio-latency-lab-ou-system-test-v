@@ -1,0 +1,19 @@
+# Audio Latency & Speech Synthesis Research Lab (v1.43)
+
+## Project Overview
+Este repositório é dedicado ao estudo experimental de latência em sistemas de feedback sonoro baseados em navegador. O foco principal é analisar a variação de milissegundos entre o processamento de sinais de entrada (System Clock) e a execução fonética via `Web Audio API` e `SpeechSynthesisUtterance`.
+
+## Methodology
+A pesquisa divide-se em dois módulos de coleta de dados para observar o comportamento em diferentes arquiteturas de hardware:
+
+* **Module M (Mobile Architecture):** Otimizado para processadores ARM e navegadores mobile, focando em baixo consumo de buffer e resposta tátil.
+* **Module N (Nitro/Desktop Architecture):** Otimizado para alta performance e estabilidade de clock, com foco em compensação de drift de rede e sincronização multithread.
+
+## Access & Security
+Para garantir a integridade dos dados coletados e evitar a execução de scripts por bots de indexação, o acesso às interfaces de teste (`m.html` e `n.html`) é protegido por uma chave de validação local (Client-side Key).
+
+## Technical Specs
+- **Engine:** JavaScript ES6+
+- **Styling:** TailwindCSS Framework
+- **Time Precision:** Performance.now() integration for sub-millisecond tracking.
+- **Licence:** MIT
